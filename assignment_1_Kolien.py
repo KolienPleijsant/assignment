@@ -44,9 +44,9 @@ else:
 #Give 10 points for being female
 gender = input("What is your gender? f for female, m for male, x for gender neutral")
 
-if gender == "f" or "F":
+if gender == "f" or gender == "F":
     count = 10
-elif gender == "x" or "X":
+elif gender == "x" or gender == "X":
 	count = 5
 else:
 	count = 0
@@ -62,7 +62,7 @@ count = count + age
 hometown = input("In which city do you live?")
 hometown = hometown.title().strip()
 
-if hometown == "Utrecht" or "Utreg":
+if hometown == "Utrecht" or hometown == "Utreg":
 	print("That is a cool city!")
 	count = count + 40
 elif hometown == "Baarn":
